@@ -27,7 +27,7 @@ class ContactDetailView(RetrieveUpdateDestroyAPIView):
         return Contact.objects.filter(owner=self.request.user)
 
         # this querset work as since we only need our objects unlike in review where we need 
-        # multiple people review and can edit only our own so permission class IsOwnerOrReadOnly 
+        # multiple people review and can edit only our own so permission class IsOwnerOrReadOnly ok
 
 
 
